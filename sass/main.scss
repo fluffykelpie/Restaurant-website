@@ -1,9 +1,8 @@
 @import 'reset', 'variables', 'mixins';
 
 html {
+    background: #82558db0;
     background-image: url("images/topography.png");
-    background-position: center;
-    background-repeat: repeat;
 }
 
 .container {
@@ -15,6 +14,33 @@ html {
     }
 
     .menu {
+        margin: 2rem;
+
+        .menu-btn {
+            margin-bottom: 1.2rem;
+            background: $items;
+            padding: 0.625rem;
+            font-size: 0.8rem;
+            font-weight: 900;
+            text-transform: uppercase;
+        }
+
+        #menu-list {
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            list-style: none;
+        
+            a {
+                text-decoration: none;
+                cursor: pointer;
+                background: $items;
+                padding: 0.625rem;
+                font-size: 1.2rem;
+                color: black;
+                font-weight: 800;
+            }
+        }
 
     }
 

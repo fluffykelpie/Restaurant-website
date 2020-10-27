@@ -5,15 +5,143 @@
 }
 
 html {
-  background: #ebeaea;
+  background: rgba(255, 197, 39, 0.493);
   height: 100vh;
   width: 100%;
   font-size: 100%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 body {
   width: 100%;
   height: 100%;
+}
+
+html {
+  background-image: url("images/topography.png");
+  background-position: center;
+  background-repeat: repeat;
+}
+
+.container {
+  display: grid;
+  grid-gap: 20px;
+}
+.container h1, .container h2, .container h3 {
+  margin: 0 0 0.31rem 0;
+}
+.container .top-page {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas: "hero hero price1" "hero hero price2";
+  margin: 2rem;
+}
+.container .top-page .hero {
+  grid-area: hero;
+  min-height: 400px;
+  background: white url("images/tacos.jpg");
+  background-size: cover;
+  background-position: bottom;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding: 1.32rem;
+  border: 1px solid rgba(0, 0, 0, 0.685);
+}
+.container .top-page .hero * {
+  background: #ffc400;
+  padding: 0.31rem;
+  border: 1px solid rgba(0, 0, 0, 0.041);
+}
+.container .top-page .hero p {
+  font-weight: 700;
+}
+.container .top-page .price-one, .container .top-page .price-two {
+  background: #ffc400;
+  display: grid;
+  grid-gap: 20px;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+}
+.container .top-page .price-one .price, .container .top-page .price-two .price {
+  font-size: 3.25rem;
+  font-weight: 700;
+}
+.container .top-page .price-one p, .container .top-page .price-two p {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.container .top-page .price-one {
+  grid-area: price1;
+}
+.container .top-page .price-two {
+  grid-area: price2;
+}
+.container .food-menu {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  margin: 0 2rem;
+}
+.container .food-menu .food-item {
+  background: #fffbfb;
+  padding: 0.625rem;
+  border: 1px solid rgba(255, 255, 255, 0.472);
+  text-align: center;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+}
+.container .food-menu .food-item .icon {
+  font-size: 2.5rem;
+}
+.container .food-menu .food-item h3 {
+  margin: 0.3rem;
+}
+.container .food-menu .food-item p {
+  font-weight: 600;
+}
+.container .featured {
+  background: #ecebeb;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 400px 1fr;
+  align-items: center;
+  padding: 3.125rem;
+  margin: 2rem;
+}
+.container .featured img {
+  width: 100%;
+}
+.container .featured .about-details p {
+  font-size: 1rem;
+  padding: 0.5rem 0;
+  font-weight: 600;
+}
+.container .featured .about-details button {
+  background: #ecc33b;
+  padding: 0.625rem 1.25rem;
+  margin: 0.9rem 0;
+  font-weight: bold;
+}
+.container .restaurant {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+}
+.container .restaurant h2 {
+  grid-column: 1/-1;
+  text-align: center;
+}
+.container .restaurant img {
+  width: 100%;
+  height: 300px;
+  background-position: cover;
+  border: 1px solid rgba(255, 255, 255, 0.267);
 }
 
 /*# sourceMappingURL=style.css.map */

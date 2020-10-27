@@ -7,67 +7,78 @@
     <title>Restaurant Website</title>
 </head>
 <body>
-    <div class="menu">
-        <button>Menu</button>
+    <div class="container">
+        <div class="menu">
+        <button class="menu-btn">
+            <span class="open">☰</span>
+            <span class="close">x</span>
+            Menu
+        </button>
         <ul id="menu-list">
-            <li>Tacos</li>
-            <li>Beers</li>
-            <li>Wines</li>
-            <li>Desserts</li>
-            <li>Reservations</li>
+            <li><a href="#">Tacos</a></li>
+            <li><a href="#">Beers</a></li>
+            <li><a href="#">Wines</a></li>
+            <li><a href="#">Desserts</a></li>
+            <li><a href="#">Reservations</a></li>
         </ul>
-    </div>
-    <div class="top-page">
-        <header class="hero">
-            <h1>Fluffy Kelpie's Taco Joint</h1>
-            <p>The best tacos in town!</p>
-        </header>
-        <div class="price-one">
-            <p class="price">€5,00</p>
-            <p>tacos</p>
         </div>
-        <div class="price-two">
-            <p class="price">€2,50</p>
-            <p>Kombucha</p>
+        <div class="top-page">
+            <header class="hero">
+                <h1>Fluffy's Taco Joint</h1>
+                <p>The best tacos in town!</p>
+            </header>
+                <div class="price-one">
+                    <p class="price">€5,00</p>
+                    <p>Tacos</p>
+                </div>
+                <div class="price-two">
+                    <p class="price">€2,50</p>
+                    <p>Kombucha</p>
+                </div>   
         </div>
-    </div>
-    <section class="food-menu">
-        <div class="food-item">
-            <span class="icon">🌮</span>
-            <h3>Tacos</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga, ipsa!</p>
-        </div>
-        <div class="food-item">
-            <span class="icon">🍺</span>
-            <h3>Beer</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga, ipsa!</p>
-        </div>
-        <div class="food-item">
-            <span class="icon">🍷</span>
-            <h3>Wine</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga, ipsa!</p>
-        </div>
-        <div class="food-item">
-            <span class="icon">🎵</span>
-            <h3>Live Music</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga, ipsa!</p>
-        </div> 
-    </section>
-    <section class="featured">
-        <img src="images/queso-taco.png" alt="Yummy Taco" class="about__mockup">
-        <div class="about__details">
+        <section class="food-menu">
+            <div class="food-item">
+                <span class="icon">🌮</span>
+                <h3>Tacos</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga, ipsa!</p>
+            </div>
+            <div class="food-item">
+                <span class="icon">🍺</span>
+                <h3>Beer</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga, ipsa!</p>
+            </div>
+            <div class="food-item">
+                <span class="icon">🍷</span>
+                <h3>Wine</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga, ipsa!</p>
+            </div>
+            <div class="food-item">
+                <span class="icon">🎵</span>
+                <h3>Live Music</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga, ipsa!</p>
+            </div> 
+        </section>
+        <section class="featured">
+        <img src="./images/taco.png" alt="Best Taco in town">
+        <div class="about-details">
             <h2>Featured Taco</h2>
             <p>Slim Profile, easy to hold and loaded with cheese.</p>
             <p>This is the one you have been waiting for</p>
             <button>Learn More →</button>
           </div>
-    </section>
-    <section class="restaurant">
-        <h2>See our restaurant</h2>
-        <img src="" alt="restautant interior">
-        <img src="" alt="seats restaurant">
-        <img src="" alt="outside space">
-        <img src="" alt="family environment">
-    </section>
+        </section>
+        <section class="restaurant">
+            <h2>See our restaurant</h2>
+            <img src="./images/inside-restaurant.jpg" alt="restaurant">
+            <img src="./images/mexican.jpg" alt="mexican">
+            <img src="./images/rancho-los-alazanes-mexican.jpg" alt="restaurant inside">
+            <img src="./images/staff.jpg" alt="staff">
+            <img src="./images/Terrace.jpg" alt="outside terrace">
+            <img src="./images/the-original-california.jpg" alt="mexican food">
+            <img src="./images/food.jpg" alt="mexican food">
+            <img src="./images/food.png" alt="food">
+            <img src="./images/ground-beef-tacos-17.jpg" alt="beef taco">
+        </section>
+    </div>
 </body>
 </html>
